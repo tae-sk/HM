@@ -27,9 +27,6 @@ $(document).ready(function(){
     $('.layout-img span').click(function(){
         $('.layout-img').css('display','none');
     })
-    $('.layout-img').click(function(e){
-        $('.layout-img').css('display','none');
-    })
 
     $('.navbar_toggle').click(function(){
         $('.nav_bar_content').css('transform','translate(40%,0)').css('transition','0.5s')
