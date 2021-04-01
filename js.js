@@ -41,6 +41,17 @@ $(document).ready(function(){
         $('.navbar_toggle_times').css('display','none')
         $('.navbar_toggle').css('opacity','1')
     })
+    
+    $('.navbar_toggle').click(function(e){
+        $('.nav_bar_content').css('transform','translate(40%,0)').css('transition','0.5s')
+        $('.navbar_toggle').css('opacity','0')
+        $('.navbar_toggle_times').css('display','block')
+    })
+    $('.navbar_toggle_times').click(function(){
+        $('.nav_bar_content').css('transform','translate(100%,0)').css('transition','0.5s')
+        $('.navbar_toggle_times').css('display','none')
+        $('.navbar_toggle').css('opacity','1')
+    }
     // $('.navbar_toggle').click(function(e){
     //     if($('.nav_var_content').is(':animated')) return false;
     //     $('.nav_bar_content').css('transform','translate(800px)')
