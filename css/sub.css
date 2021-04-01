@@ -1,0 +1,56 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none; text-decoration:none;}
+html:focus{outline: none; -webkit-tap-highlight-color :#fff; font-size:20px;}
+a{color:black; display:block;}
+#wrap{width:100%;}
+.logo-header{width:100%; display:flex; justify-content:center; text-align:center; border-bottom:1px solid #d7d7d7;}
+.header-box{width:1024px; display:flex; justify-content:space-between;}
+.header-logo a{display:block;}
+
+.dropdown{width:60%; height:105px; position: relative;}
+.dropdown>ul{width:100%; height:30px; display:flex; justify-content:space-around; position: absolute; padding:10px 0; bottom:0;}
+.dropdown>ul>li{width:25%; line-height:30px; cursor:pointer;}
+.dropdown>ul>li>a{ font-size:18px;}
+.menu>ul{padding-top:8px;}
+.menu>ul>li{height:0px; overflow:hidden; background:#f7f7f7; line-height:70px; transition:0.5s;}
+.menu>ul>li>a{font-size:14px;}
+.dropdown ul li:hover .sub-menu li{height:70px;line-height:70px; transition:0.5s;}
+.dropdown>ul:hover{background:#e7e7e7;}
+.sub-menu li:hover{background:#e7e7e7;}
+.navbar_toogle{display:none; position: absolute; right:5%; top:50%; transform: translateY(-50%); }
+
+.content-section{width:100%;display:flex;justify-content:center; align-items:center; text-align:center; height:600px;}
+.content-box{width:1024px; margin:0 auto; font-size:20px; text-align:center;}
+
+.site-footer{width:100%;display:flex; justify-content:center; background:#d7d7d7d7;}
+.site-footer>.container{width:1024px; display:flex; justify-content:space-around;}
+.container>div{width:calc(100%/3);}
+.copyright{line-height:100px; text-align:center;}
+.copyright a{font-size:10px; font-weight: 600;}
+.sns{height:100%; display:flex; justify-content:space-around;}
+.sns li{width:calc(100%/3); text-align:center;}
+.sns li .fab{font-size:2rem; line-height:100px;}
+
+/* ===================M E D I A Q U E R Y ================ */
+@media all and (max-width: 768px){
+    /* ========dropdown======== */
+    .dropdown>ul>li>a{font-size:12px;}
+    .menu>ul{padding-top:10px;}
+    .menu>ul>li>a{font-size:10px;}
+
+    /* ------------footer----------- */
+    .container{width:100%; display:flex; flex-direction: column;}
+    .container div{width:100%; background:#d7d7d7;}
+    .footer_logo{display:flex; justify-content:center;}
+    .copyright a{font-size:15px;}
+
+    
+}
+@media all and (min-width :769px) and (max-width: 1024px) { 
+    /* -----header-------- */
+    /* .header-logo img{width:100%; padding-top:15%;} */
+    /* ------slide-------- */
+    .content-section{width:100%;}
+    .dropdown{width:100%;}
+
+}
