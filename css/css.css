@@ -88,10 +88,7 @@ a{color:black; display:block;}
 
 
 /* ===================== - M - E - D - I - A - Q - U - E - R - Y - ======================== */
-
-
-
-@media all and (min-width:400px) and (max-width: 768px){
+@media all and (max-width: 768px){
     /* ========dropdown======== */
     /* .dropdown>ul>li>a{font-size:12px;}
     .menu>ul{padding-top:10px;}
