@@ -47,16 +47,6 @@ $(document).ready(function(){
         // })
         
     })
-    $('.navbar_toggle').click(function(e){
-        $('.nav_bar_content').css('transform','translate(40%,0)').css('transition','0.5s')
-        $('.navbar_toggle').css('opacity','0')
-        $('.navbar_toggle_times').css('display','block')
-    })
-    $('.navbar_toggle_times').click(function(e){
-        $('.nav_bar_content').css('transform','translate(100%,0)').css('transition','0.5s')
-        $('.navbar_toggle_times').css('display','none')
-        $('.navbar_toggle').css('opacity','1')
-    })
 
 function slide() {
     var os = 0;
